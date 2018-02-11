@@ -38,8 +38,13 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if event.message.text == '角龍':
-        message = TextSendMessage(text='飛龍種')
+    msg = event.message.text
+
+    if msg == '飛龍種':
+        message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
+    else:
+        message = TextSendMessage(text=msg)
+
     line_bot_api.reply_message(event.reply_token, message)
 
 import os
