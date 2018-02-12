@@ -112,7 +112,6 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/lava_mountain.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/lava_mountain.jpg')
     elif msg == '冥燈龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg')
-    else:
 
     line_bot_api.reply_message(event.reply_token, message)
 
