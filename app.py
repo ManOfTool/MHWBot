@@ -53,7 +53,7 @@ def handle_message(event):
     elif msg == '古龍種':
         message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n屍套龍\n滅盡龍\n熔山龍')
     elif msg == '角龍':
-        message = ImageSendMessage(original_content_url = 'http://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg', preview_image_url = 'http://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg')
+        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg')
     else:
         message = TextSendMessage(text=msg)
 
