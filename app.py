@@ -52,6 +52,8 @@ def handle_message(event):
         message = TextSendMessage(text='泥魚龍\n熔岩龍')
     elif msg == '古龍種':
         message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n屍套龍\n滅盡龍\n熔山龍')
+    elif msg == '角龍':
+        message = ImageSendMessage(original_content_url = 'https://forum.gamer.com.tw/C.php?bsn=5786&snA=137187', preview_image_url = '')
     else:
         message = TextSendMessage(text=msg)
 
