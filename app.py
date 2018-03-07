@@ -47,7 +47,7 @@ def handle_message(event):
     elif msg == '鳥龍種':
         message = TextSendMessage(text='搔鳥\n眩鳥\n毒妖鳥')
     elif msg == '獸龍種':
-        message = TextSendMessage(text='土砂龍\n爆錘龍\n骨錘龍\n蠻顎龍')
+        message = TextSendMessage(text='土砂龍\n爆鎚龍\n骨鎚龍\n蠻顎龍')
     elif msg == '魚龍種':
         message = TextSendMessage(text='泥魚龍\n熔岩龍')
     elif msg == '古龍種':
@@ -88,9 +88,9 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401020/poison_bird.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401020/poison_bird.jpg')
     elif msg == '土砂龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/muddy.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/muddy.jpg')
-    elif msg == '爆錘龍':
+    elif msg == '爆鎚龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/big_chin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/big_chin.jpg')
-    elif msg == '骨錘龍':
+    elif msg == '骨鎚龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bone_chin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bone_chin.jpg')
     elif msg == '蠻顎龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/rousing_nose.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/rousing_nose.jpg')
