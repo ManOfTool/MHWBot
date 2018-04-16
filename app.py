@@ -47,7 +47,7 @@ def handle_message(event):
     elif msg == '鳥龍種':
         message = TextSendMessage(text='搔鳥\n眩鳥\n毒妖鳥')
     elif msg == '獸龍種':
-        message = TextSendMessage(text='土砂龍\n爆鎚龍\n骨鎚龍\n蠻顎龍')
+        message = TextSendMessage(text='土砂龍\n爆鎚龍\n骨鎚龍\n蠻顎龍\n恐暴龍')
     elif msg == '魚龍種':
         message = TextSendMessage(text='泥魚龍\n熔岩龍')
     elif msg == '古龍種':
