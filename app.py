@@ -51,7 +51,7 @@ def handle_message(event):
     elif msg == '魚龍種':
         message = TextSendMessage(text='泥魚龍\n熔岩龍')
     elif msg == '古龍種':
-        message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n屍套龍\n滅盡龍\n熔山龍')
+        message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍')
     elif msg == '角龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg')
     elif msg == '黑角龍':
@@ -114,6 +114,8 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg')
     elif msg == '恐暴龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg')
+    elif msg == '爛輝龍':
+        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg')
 
     line_bot_api.reply_message(event.reply_token, message)
 
