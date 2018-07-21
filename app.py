@@ -116,7 +116,9 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg')
     elif msg == '爛輝龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg')
-
+    elif msg == '炎妃龍':
+        message = ImageSendMessage(original_content_url = FLAME_FEMALE, preview_image_url = FLAME_FEMALE)
+    
     line_bot_api.reply_message(event.reply_token, message)
 
 import os
