@@ -106,8 +106,8 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg')
     elif msg == '炎王龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg')
-    elif msg == '炎妃龍':
-        message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
+    # elif msg == '炎妃龍':
+    #     message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
     elif msg == '屍套龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg')
     elif msg == '滅盡龍':
