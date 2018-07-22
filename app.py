@@ -12,7 +12,7 @@ from linebot.models import (
 
 from util.config import *
 from util.cloudinary import *
-from re import *
+import re
 
 app = Flask(__name__)
 
