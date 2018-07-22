@@ -114,7 +114,7 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg')
     elif msg == '炎妃龍':
         url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
-        url = re.find(exp, msg)
+        url = re.findall(exp, msg)[0][1:-1]
 
         message = ImageSendMessage(original_content_url = url, preview_image_url = url)
         # message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
