@@ -11,6 +11,5 @@ cloudinary.config(
 	api_key = os.getenv('API_KEY', 'DEFAULT'),
 	api_secret = os.getenv('API_SECRET', 'DEFAULT')
 )
-print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True))
 
 LUNASTRA = os.getenv('LUNASTRA', 'DEFAULT')

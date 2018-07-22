@@ -42,6 +42,8 @@ def callback():
 def handle_message(event):
     msg = event.message.text
 
+    print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True))
+
     if msg == '飛龍種':
         message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
     elif msg == '牙龍種':
