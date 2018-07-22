@@ -61,7 +61,7 @@ def handle_message(event):
     elif msg == '古龍種':
         message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍')
 
-    elif:
+    if msg in monsters:
         url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
         url = url[10:-3]
 
