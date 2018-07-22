@@ -11,6 +11,7 @@ from linebot.models import (
 )
 
 from util.config import *
+from re import *
 
 app = Flask(__name__)
 
@@ -42,7 +43,9 @@ def callback():
 def handle_message(event):
     msg = event.message.text
 
-    print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'))
+    exp = r'"(?:[^\\]|(?:\\.))*"'
+
+    print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True).src())
 
     if msg == '飛龍種':
         message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
@@ -108,8 +111,12 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg')
     elif msg == '炎王龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg')
-    # elif msg == '炎妃龍':
-    #     message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
+    elif msg == '炎妃龍':
+        url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
+        url = re.find(exp, msg)
+
+        message = ImageSendMessage(original_content_url = url, preview_image_url = url)
+        # message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
     elif msg == '屍套龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg')
     elif msg == '滅盡龍':
