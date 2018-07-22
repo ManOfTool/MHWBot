@@ -133,7 +133,7 @@ def handle_message(event):
     elif msg == '爛輝龍':
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg')
 
-    line_bot_api.reply_message(event.reply_token, message)
+    # line_bot_api.reply_message(event.reply_token, message)
 
 import os
 if __name__ == "__main__":
