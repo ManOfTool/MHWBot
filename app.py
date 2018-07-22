@@ -60,78 +60,84 @@ def handle_message(event):
         message = TextSendMessage(text='泥魚龍\n熔岩龍')
     elif msg == '古龍種':
         message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍')
-    elif msg == '角龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg')
-    elif msg == '黑角龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/black_diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/black_diablos.jpg')
-    elif msg == '雄火龍' or msg == '火龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/male_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/male_fire.jpg')
-    elif msg == '雌火龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/female_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/female_fire.jpg')
-    elif msg == '蒼火龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/blue_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/blue_fire.jpg')
-    elif msg == '櫻火龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/sakura_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/sakura_fire.jpg')
-    elif msg == '風飄龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/ice_bird.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/ice_bird.jpg')
-    elif msg == '浮空龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401015/floating_marshmalow.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401015/floating_marshmalow.jpg')
-    elif msg == '爆鱗龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bomber.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bomber.jpg')
-    elif msg == '大凶豺龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/big_lizard.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/big_lizard.jpg')
-    elif msg == '大凶顎龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/black_lizard.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/black_lizard.jpg')
-    elif msg == '岩賊龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402838/blue_lizard.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402838/blue_lizard.jpg')
-    elif msg == '飛雷龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/pikachu.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/pikachu.jpg')
-    elif msg == '慘爪龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/red_dog.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/red_dog.jpg')
-    elif msg == '搔鳥':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/holding_rock.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/holding_rock.jpg')
-    elif msg == '眩鳥':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/light.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/light.jpg')
-    elif msg == '毒妖鳥':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401020/poison_bird.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401020/poison_bird.jpg')
-    elif msg == '土砂龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/muddy.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/muddy.jpg')
-    elif msg == '爆鎚龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/big_chin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/big_chin.jpg')
-    elif msg == '骨鎚龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bone_chin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bone_chin.jpg')
-    elif msg == '蠻顎龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/rousing_nose.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/rousing_nose.jpg')
-    elif msg == '泥魚龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/mud_fish.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/mud_fish.jpg')
-    elif msg == '熔岩龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/lava_fish.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/lava_fish.jpg')
-    elif msg == '麒麟':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/kirin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/kirin.jpg')
-    elif msg == '鋼龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg')
-    elif msg == '炎王龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg')
-    elif msg == '炎妃龍':
+
+    elif:
         url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
         url = url[10:-3]
 
         print(url)
+    # elif msg == '角龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg')
+    # elif msg == '黑角龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/black_diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/black_diablos.jpg')
+    # elif msg == '雄火龍' or msg == '火龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/male_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/male_fire.jpg')
+    # elif msg == '雌火龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/female_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/female_fire.jpg')
+    # elif msg == '蒼火龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/blue_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/blue_fire.jpg')
+    # elif msg == '櫻火龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/sakura_fire.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/sakura_fire.jpg')
+    # elif msg == '風飄龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/ice_bird.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/ice_bird.jpg')
+    # elif msg == '浮空龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401015/floating_marshmalow.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401015/floating_marshmalow.jpg')
+    # elif msg == '爆鱗龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bomber.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bomber.jpg')
+    # elif msg == '大凶豺龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/big_lizard.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/big_lizard.jpg')
+    # elif msg == '大凶顎龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/black_lizard.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/black_lizard.jpg')
+    # elif msg == '岩賊龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402838/blue_lizard.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402838/blue_lizard.jpg')
+    # elif msg == '飛雷龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/pikachu.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/pikachu.jpg')
+    # elif msg == '慘爪龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/red_dog.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/red_dog.jpg')
+    # elif msg == '搔鳥':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/holding_rock.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/holding_rock.jpg')
+    # elif msg == '眩鳥':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/light.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/light.jpg')
+    # elif msg == '毒妖鳥':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401020/poison_bird.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401020/poison_bird.jpg')
+    # elif msg == '土砂龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/muddy.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518402759/muddy.jpg')
+    # elif msg == '爆鎚龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/big_chin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/big_chin.jpg')
+    # elif msg == '骨鎚龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bone_chin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/bone_chin.jpg')
+    # elif msg == '蠻顎龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/rousing_nose.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401019/rousing_nose.jpg')
+    # elif msg == '泥魚龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/mud_fish.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/mud_fish.jpg')
+    # elif msg == '熔岩龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/lava_fish.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/lava_fish.jpg')
+    # elif msg == '麒麟':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/kirin.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/kirin.jpg')
+    # elif msg == '鋼龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403112/windy_steel.jpg')
+    # elif msg == '炎王龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg')
+    # elif msg == '炎妃龍':
+    #     url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
+    #     url = url[10:-3]
 
-        # message = ImageSendMessage(original_content_url = url, preview_image_url = url)
-        message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
-    elif msg == '屍套龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg')
-    elif msg == '滅盡龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/destroyer.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/destroyer.jpg')
-    elif msg == '熔山龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/lava_mountain.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/lava_mountain.jpg')
-    elif msg == '冥燈龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg')
-    elif msg == '恐暴龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg')
-    elif msg == '爛輝龍':
-        message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg')
+    #     print(url)
+
+    #     # message = ImageSendMessage(original_content_url = url, preview_image_url = url)
+    #     message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
+    # elif msg == '屍套龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518403015/walking_dead.jpg')
+    # elif msg == '滅盡龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/destroyer.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401005/destroyer.jpg')
+    # elif msg == '熔山龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/lava_mountain.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401018/lava_mountain.jpg')
+    # elif msg == '冥燈龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401016/lantern.jpg')
+    # elif msg == '恐暴龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1521723041/cucumber.jpg')
+    # elif msg == '爛輝龍':
+    #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1524198116/golden_sheep.jpg')
 
     # line_bot_api.reply_message(event.reply_token, message)
 
