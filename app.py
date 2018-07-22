@@ -48,24 +48,28 @@ def handle_message(event):
 
     # print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True))
 
-    if msg == '飛龍種':
-        message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
-    elif msg == '牙龍種':
-        message = TextSendMessage(text='大凶豺龍\n大凶顎龍\n岩賊龍\n飛雷龍\n慘爪龍')
-    elif msg == '鳥龍種':
-        message = TextSendMessage(text='搔鳥\n眩鳥\n毒妖鳥')
-    elif msg == '獸龍種':
-        message = TextSendMessage(text='土砂龍\n爆鎚龍\n骨鎚龍\n蠻顎龍\n恐暴龍')
-    elif msg == '魚龍種':
-        message = TextSendMessage(text='泥魚龍\n熔岩龍')
-    elif msg == '古龍種':
-        message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍')
+    if msg in catagory:
+        message = TextSendMessage(catagory[msg])
+        line_bot_api.reply_message(event.reply_token, message)
+    # if msg == '飛龍種':
+    #     message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
+    # elif msg == '牙龍種':
+    #     message = TextSendMessage(text='大凶豺龍\n大凶顎龍\n岩賊龍\n飛雷龍\n慘爪龍')
+    # elif msg == '鳥龍種':
+    #     message = TextSendMessage(text='搔鳥\n眩鳥\n毒妖鳥')
+    # elif msg == '獸龍種':
+    #     message = TextSendMessage(text='土砂龍\n爆鎚龍\n骨鎚龍\n蠻顎龍\n恐暴龍')
+    # elif msg == '魚龍種':
+    #     message = TextSendMessage(text='泥魚龍\n熔岩龍')
+    # elif msg == '古龍種':
+    #     message = TextSendMessage(text='麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍')
 
-    if msg in monsters:
+    elif msg in monsters:
         url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
         url = url[10:-3]
 
-        print(url)
+        message = ImageSendMessage(original_content_url = url, preview_image_url = url)
+        line_bot_api.reply_message(event.reply_token, message)
     # elif msg == '角龍':
     #     message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518400220/diablos.jpg')
     # elif msg == '黑角龍':
