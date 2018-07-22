@@ -1,6 +1,6 @@
 import cloudinary
 import cloudinary.api
-from config import CLOUD_NAME, API_KEY, API_SECRET
+from util.config import CLOUD_NAME, API_KEY, API_SECRET
 
 cloudinary.config(
 	cloud_name = CLOUD_NAME,
