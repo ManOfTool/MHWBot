@@ -11,6 +11,7 @@ from linebot.models import (
 )
 
 from util.config import *
+from util.cloudinary import *
 from re import *
 
 app = Flask(__name__)
@@ -45,7 +46,7 @@ def handle_message(event):
 
     exp = r'"(?:[^\\]|(?:\\.))*"'
 
-    print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True).src())
+    print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True))
 
     if msg == '飛龍種':
         message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
