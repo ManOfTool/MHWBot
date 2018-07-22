@@ -46,7 +46,7 @@ def handle_message(event):
 
     exp = r'"(?:[^\\]|(?:\\.))*"'
 
-    print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True))
+    # print(cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg').image(secure=True))
 
     if msg == '飛龍種':
         message = TextSendMessage(text='雄火龍\n雌火龍\n蒼火龍\n櫻火龍\n角龍\n黑角龍\n風飄龍\n浮空龍')
@@ -114,9 +114,9 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg', preview_image_url = 'https://res.cloudinary.com/hxrp4uqty/image/upload/v1518401017/flame.jpg')
     elif msg == '炎妃龍':
         url = cloudinary.CloudinaryImage('mhw/' + monsters[msg] + '.jpg').image(secure = True)
+        url = re.findall(exp, msg)[0]
+        
         print(url)
-        # url = re.findall(exp, msg)[0]
-        # print(url)
 
         # message = ImageSendMessage(original_content_url = url, preview_image_url = url)
         message = ImageSendMessage(original_content_url = cloudinary.CloudinaryImage('mhw/LUNASTRA.jpg'), preview_image_url = LUNASTRA)
