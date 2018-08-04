@@ -14,7 +14,7 @@ catagory = {
 	'鳥龍種': '搔鳥\n眩鳥\n毒妖鳥',
 	'獸龍種': '土砂龍\n爆鎚龍\n骨鎚龍\n蠻顎龍\n恐暴龍',
 	'魚龍種': '泥魚龍\n熔岩龍',
-	'古龍種': '麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍'
+	'古龍種': '麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍\n滅盡龍\n熔山龍\n爛輝龍\n貝希摩斯'
 }
 
 monsters = {
@@ -50,5 +50,6 @@ monsters = {
 	'熔山龍': 'mhw/ZMAGDAROS',
 	'冥燈龍': 'mhw/XENOJIIVA',
 	'恐暴龍': 'mhw/DEVILJHO',
-	'絢輝龍': 'mhw/KULVETAROTH'
+	'絢輝龍': 'mhw/KULVETAROTH',
+	'貝希摩斯': 'mhw/BEHEMOTH'
 }
