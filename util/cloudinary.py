@@ -51,5 +51,7 @@ monsters = {
 	'冥燈龍': 'mhw/XENOJIIVA',
 	'恐暴龍': 'mhw/DEVILJHO',
 	'絢輝龍': 'mhw/KULVETAROTH',
-	'貝希摩斯': 'mhw/BEHEMOTH'
+	'貝希摩斯': 'mhw/BEHEMOTH',
+	'鹿首精': 'mhw/LESHY',
+	'古代鹿首精': 'mhw/KERNUN'
 }
