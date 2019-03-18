@@ -6,5 +6,3 @@ CHANNEL_SECRET = os.getenv('CHANNEL_SECRET', 'DEFAULT')
 CLOUD_NAME = os.getenv('CLOUD_NAME', 'DEFAULT')
 API_KEY = os.getenv('API_KEY', 'DEFAULT')
 API_SECRET = os.getenv('API_SECRET', 'DEFAULT')
-
-LUNASTRA = os.getenv('LUNASTRA', 'DEFAULT')
