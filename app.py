@@ -12,6 +12,7 @@ from linebot.models import (
 
 from util.config import *
 from util.cloudinary import *
+from random import randint
 import re
 
 app = Flask(__name__)
@@ -57,6 +58,12 @@ def handle_message(event):
 
         message = ImageSendMessage(original_content_url = url, preview_image_url = url)
         
+        line_bot_api.reply_message(event.reply_token, message)
+
+    elif msg == "rand":
+        m_list = list(monsters)
+        message = TextSendMessage(m_list[randint(0, len(m_list) - 1)])
+
         line_bot_api.reply_message(event.reply_token, message)
 
 import os
