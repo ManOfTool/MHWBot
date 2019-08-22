@@ -67,7 +67,7 @@ def handle_message(event):
         else:
             m_list = list(monsters)
 
-        m_list(shuffle)
+        shuffle(m_list)
 
         message = TextSendMessage(m_list[randrange(0, len(m_list) - 1)])
 
