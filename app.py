@@ -12,7 +12,7 @@ from linebot.models import (
 
 from util.config import *
 from util.cloudinary import *
-from random import randint
+from random import randrange, shuffle
 import re
 
 app = Flask(__name__)
@@ -60,9 +60,16 @@ def handle_message(event):
         
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif msg == "rand":
-        m_list = list(monsters)
-        message = TextSendMessage(m_list[randint(0, len(m_list) - 1)])
+    elif "$" in msg:
+        cata = msg.split('$')[-1]
+        if cata in catagory:
+            m_list = catagory[cata].split('\n')
+        else:
+            m_list = list(monsters)
+
+        m_list(shuffle)
+
+        message = TextSendMessage(m_list[randrange(0, len(m_list) - 1)])
 
         line_bot_api.reply_message(event.reply_token, message)
 
