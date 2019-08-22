@@ -13,7 +13,6 @@ from linebot.models import (
 from util.config import *
 from util.cloudinary import *
 from random import randrange, shuffle
-import re
 
 app = Flask(__name__)
 
@@ -45,13 +44,13 @@ def callback():
 def handle_message(event):
     msg = event.message.text
 
-    exp = r'"(?:[^\\]|(?:\\.))*"'
-
+    # Return monsters in catagory
     if msg in catagory:
         message = TextSendMessage(catagory[msg])
         
         line_bot_api.reply_message(event.reply_token, message)
 
+    # Return informatino of monster
     elif msg in monsters:
         url = cloudinary.CloudinaryImage(monsters[msg] + '.jpg').image(secure = True)
         url = url[10:-3]
@@ -60,11 +59,13 @@ def handle_message(event):
         
         line_bot_api.reply_message(event.reply_token, message)
 
+    # Choose a monster
     elif "$" in msg:
         cata = msg.split('$')[-1]
-        if cata in catagory:
+
+        if cata in catagory: # choose catagory
             m_list = catagory[cata].split('\n')
-        else:
+        else: # choose all monsters
             m_list = list(monsters)
 
         shuffle(m_list)
