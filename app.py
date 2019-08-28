@@ -47,7 +47,7 @@ def handle_message(event):
     # Return monsters in catagory
     if msg in catagory:
         message = TextSendMessage(catagory[msg])
-        
+
         line_bot_api.reply_message(event.reply_token, message)
 
     # Return informatino of monster
@@ -59,11 +59,11 @@ def handle_message(event):
         
         line_bot_api.reply_message(event.reply_token, message)
 
-    # Choose a monster
-    elif "$" in msg:
+    # Choose a monster randomly
+    elif "$" == msg[0]:
         cata = msg.split('$')[-1]
 
-        if cata in catagory: # choose catagory
+        if cata in catagory: # choose in catagory
             m_list = catagory[cata].split('\n')
         else: # choose all monsters
             m_list = list(monsters)
