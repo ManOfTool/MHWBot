@@ -73,7 +73,7 @@ def handle_message(event):
 
         shuffle(m_list)
 
-        message = TextSendMessage(m_list[randrange(0, len(m_list) - 1)])
+        message = TextSendMessage('打' + m_list[randrange(0, len(m_list) - 1)])
         line_bot_api.reply_message(re_token, message)
 
 import os
