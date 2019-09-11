@@ -45,7 +45,7 @@ monsters = {
 	'搔鳥': 'mhw/KYK',
 	'眩鳥': 'mhw/TTYK',
 	'毒妖鳥': 'mhw/PUKEI',
-	'水妖鳥': 'mhw/TEMP',
+	'水妖鳥': 'mhw/PUKEI_G',
 	'黑狼鳥': 'mhw/TEMP',
 	'土砂龍': 'mhw/BARROTH',
 	'蠻顎龍': 'mhw/ANJANATH',
