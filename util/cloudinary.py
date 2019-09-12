@@ -9,12 +9,12 @@ cloudinary.config(
 )
 
 catagory = {
-	'飛龍種': '雄火龍/蒼火龍\n雌火龍/櫻火龍\n角龍/黑角龍\n風飄龍/霜翼風飄龍\n浮空龍/浮眠龍\n爆鱗龍/紅蓮爆鱗龍\n冰牙龍\n轟龍\n迅龍',
+	'飛龍種': '雄火龍/蒼火龍/金火龍\n雌火龍/櫻火龍/銀火龍\n角龍/黑角龍\n風飄龍/霜翼風飄龍\n浮空龍/浮眠龍\n爆鱗龍/紅蓮爆鱗龍\n冰牙龍\n轟龍/黑轟龍\n迅龍',
 	'牙龍種': '大凶豺龍\n大凶顎龍\n岩賊龍\n飛雷龍/痺毒龍\n慘爪龍/兇爪龍\n雷狼龍',
 	'鳥龍種': '搔鳥\n眩鳥\n毒妖鳥/水妖鳥\n黑狼鳥',
 	'獸龍種': '土砂龍\n爆鎚龍/骨鎚龍\n蠻顎龍/雷顎龍\n恐暴龍/煌怒恐暴龍\n碎龍\n斬龍/硫斬龍\n猛牛龍',
 	'魚龍種': '泥魚龍\n熔岩龍\n冰魚龍',
-	'古龍種': '麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍/霧瘴屍套龍\n滅盡龍/殲世滅盡龍\n熔山龍\n絢輝龍\n冰呪龍\n溟波龍\n貝希摩斯',
+	'古龍種': '麒麟\n鋼龍\n炎王龍\n炎妃龍\n屍套龍/霧瘴屍套龍\n滅盡龍/殲世滅盡龍\n熔山龍\n絢輝龍\n冰呪龍\n溟波龍\n天地啼哭龍\n貝希摩斯',
 	'遺存種': '鹿首精/古代鹿首精'
 }
 
@@ -23,8 +23,10 @@ monsters = {
 	'黑角龍': 'mhw/BDIABLOS',
 	'雄火龍': 'mhw/RATHALOS',
 	'蒼火龍': 'mhw/ARATHALOS',
+	'金火龍': 'mhw/TEMP',
 	'雌火龍': 'mhw/RATHIAN',
 	'櫻火龍': 'mhw/PRATHIAN',
+	'蒼火龍': 'mhw/TEMP',
 	'風漂龍': 'mhw/LEGIANA',
 	'霜翼風飄龍': 'mhw/LEGIANA_KING',
 	'浮空龍': 'mhw/PAOLUMU',
@@ -33,6 +35,7 @@ monsters = {
 	'紅蓮爆鱗龍': 'mhw/TEMP',
 	'冰牙龍': 'mhw/BARIOTH',
 	'轟龍': 'mhw/TIGREX',
+	'黑轟龍': 'mhw/TEMP',
 	'迅龍': 'mhw/NARGACUGA',
 	'大凶豺龍': 'mhw/GJAGRAS',
 	'大凶顎龍': 'mhw/GGIRROS',
@@ -73,6 +76,7 @@ monsters = {
 	'絢輝龍': 'mhw/KULVETAROTH',
 	'冰呪龍': 'mhw/VELKHANA',
 	'溟波龍': 'mhw/NAMIELLE',
+	'天地啼哭龍': 'mhw/TEMP',
 	'貝希摩斯': 'mhw/BEHEMOTH',
 	'鹿首精': 'mhw/LESHY',
 	'古代鹿首精': 'mhw/KERNUN'
