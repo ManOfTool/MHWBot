@@ -81,7 +81,7 @@ monsters = {
 	'冰呪龍': 'mhw/VELKHANA',
 	'冰咒龍': 'mhw/VELKHANA',
 	'溟波龍': 'mhw/NAMIELLE',
-	'天地煌啼龍': 'mhw/SHARA',
+	'天地煌啼龍': 'mhw/SHARAs',
 	'貝希摩斯': 'mhw/BEHEMOTH',
 	'鹿首精': 'mhw/LESHY',
 	'古代鹿首精': 'mhw/KERNUN'
