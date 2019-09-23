@@ -73,16 +73,15 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if event.message.type == 'text':
-        msg = event.message.text
-        re_token = event.reply_token
+    msg = event.message.text
+    re_token = event.reply_token
 
-        # No reaction to other message
-        if msg[0] == '-':
-            message = msgBuild(msg)
+    # No reaction to other message
+    if msg[0] == '-':
+        message = msgBuild(msg)
 
-            if message != '':
-                line_bot_api.reply_message(re_token, message)
+        if message != '':
+            line_bot_api.reply_message(re_token, message)
 
 import os
 if __name__ == "__main__":
