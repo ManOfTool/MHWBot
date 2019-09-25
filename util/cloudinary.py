@@ -51,7 +51,7 @@ monsters = {
 	'毒妖鳥': 'mhw/PUKEI',
 	'水妖鳥': 'mhw/PUKEI_G',
 	'黑狼鳥': 'mhw/GARUGA',
-	'戰痕黑狼鳥': 'mhw/TEMP',
+	'戰痕黑狼鳥': 'mhw/GARUGA_G',
 	'土砂龍': 'mhw/BARROTH',
 	'蠻顎龍': 'mhw/ANJANATH',
 	'雷顎龍': 'mhw/ANJANATH_THUNDER',
