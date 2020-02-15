@@ -30,10 +30,9 @@ def msgBuild(msg):
 
     # Return informatino of monster
     elif msg in monsters:
-        imageUrl = monsters[msg] + '.jpg'
+        imageUrl = 'mhw/monsters_info/{}.jpg'.format(monsters[msg])
 
-        url = cloudinary.CloudinaryImage(imageUrl).image(secure = True)
-        url = url[10:-3]
+        url = cloudinary.CloudinaryImage(imageUrl).build_url(secure = True)
 
         message = ImageSendMessage(original_content_url = url, preview_image_url = url)
 
